@@ -16,7 +16,7 @@
         <div class="container">
             <div class="slider-wrapper" tabindex="0">
 
-                <div class="item">
+                <div class="item" @mouseover = "stopAutoscroll" @mouseout = "startAutoscroll">
                     <img :src="slides[visibleImage].image" :alt="slides[visibleImage].title" />
                     <div class="text">
                         <h3>{{ slides[visibleImage].title }}</h3>
